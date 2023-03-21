@@ -2,29 +2,12 @@ package project.multi.agent;
 
 import java.util.*;
 
-class Symbol {
-	String name;
-	List<List<Symbol>> productions;
 
-	Symbol(String name, List<List<Symbol>> productions) {
-		this.name = name;
-		this.productions = productions;
-	}
 
-	public Symbol(String name) {
-		this(name, Arrays.asList(null));
-	}
-
-	@Override
-	public String toString() {
-		return name;
-	}
-}
-
-public class CFG {
+public class fff {
 	List<Symbol> symbols;
 
-	CFG(List<Symbol> symbols) {
+	fff(List<Symbol> symbols) {
 		this.symbols = symbols;
 	}
 
