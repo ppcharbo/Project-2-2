@@ -13,7 +13,7 @@ class Symbol {
 	}
 
 	public Symbol(String name) {
-		this(name, Arrays.asList(null));
+		this(name, new java.util.ArrayList<>());
 	}
 
 	@Override
