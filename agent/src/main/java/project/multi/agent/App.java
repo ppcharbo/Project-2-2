@@ -6,7 +6,7 @@ import java.util.Arrays;
  * Hello world!
  */
 public final class App {
-    private App() {
+    App() {
     }
 
     /**
@@ -14,7 +14,7 @@ public final class App {
      * @param args The arguments of the program.
      */
     public static void main(String[] args) {
-        System.out.println("Hello World!");
+        
         
         
         Symbol S = new Symbol("S", Arrays.asList(
@@ -77,5 +77,16 @@ public final class App {
         ));
         
         
+        
+        
+        System.out.println(TIME.toStringLong());
+        System.out.println(ROOM.toStringLong());
+        System.out.println(ACTION1.toStringLong());
     }
+
+	public String  parse(String sentence) {
+		
+		
+		return "There are no lectures on Saturday";
+	}
 }

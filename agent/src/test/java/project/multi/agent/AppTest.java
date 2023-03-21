@@ -13,6 +13,15 @@ class AppTest {
      */
     @Test
     void testApp() {
-        assertEquals(1, 1);
+        
+    	
+    	String sentence = "Which lectures are there on Saturday at 11";
+    	String expected="There are no lectures on Saturday";
+    	
+    	App app =new App();
+		
+    	String actual = app.parse(sentence);
+		
+		assertEquals(expected, actual);
     }
 }

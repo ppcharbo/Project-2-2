@@ -20,4 +20,10 @@ class Symbol {
 	public String toString() {
 		return name;
 	}
+	
+	
+	 
+	public String toStringLong() {
+		return name + Arrays.toString(productions.toArray());
+	}
 }
