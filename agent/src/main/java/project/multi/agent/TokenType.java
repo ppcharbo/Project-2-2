@@ -2,10 +2,10 @@ package project.multi.agent;
 
 public enum TokenType {
     // Keywords
-    S_RULE,
-    ACTION_RULE,
-    SCHEDULE_RULE,
-    TIMEEXPRESSION_RULE,
+    S,
+    ACTION,
+    SCHEDULE,
+    TIMEEXPRESSION,
     TIME,
     LOCATION,
     PRO,

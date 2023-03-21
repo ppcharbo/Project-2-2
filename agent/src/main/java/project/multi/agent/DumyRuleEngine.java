@@ -38,9 +38,9 @@ public class DumyRuleEngine {
 		
 		
 		// define rules
-		RuleScheduleOnSaturday pickFirstRule = new RuleScheduleOnSaturday();
+		RuleScheduleOnSaturday rule = new RuleScheduleOnSaturday();
 		rules = new Rules();
-		rules.register(pickFirstRule);
+		rules.register(rule);
 
 		// fire rules on known facts
 		rulesEngine = new DefaultRulesEngine();

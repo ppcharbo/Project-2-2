@@ -16,13 +16,13 @@ public class Lexer {
         // Match each token type in turn
         Matcher matcher;
         if ((matcher = matchRule("<S>", "<ACTION>")) != null) {
-            return new Token(TokenType.S_RULE, matcher.group(1));
+            return new Token(TokenType.S, matcher.group(1));
         } else if ((matcher = matchRule("<ACTION>", "<LOCATION>|<SCHEDULE>")) != null) {
-            return new Token(TokenType.ACTION_RULE, matcher.group(1));
+            return new Token(TokenType.ACTION, matcher.group(1));
         } else if ((matcher = matchRule("<SCHEDULE>", "Which lectures are there <TIMEEXPRESSION>")) != null) {
-            return new Token(TokenType.SCHEDULE_RULE, matcher.group(1));
+            return new Token(TokenType.SCHEDULE, matcher.group(1));
         } else if ((matcher = matchRule("<TIMEEXPRESSION>", " on <DAY> at <TIME> | at <TIME> on <DAY> ")) != null) {
-            return new Token(TokenType.TIMEEXPRESSION_RULE, matcher.group(1));
+            return new Token(TokenType.TIMEEXPRESSION, matcher.group(1));
         } else if ((matcher = matchRule("<TIME>", " 9 | 12 ")) != null) {
             return new Token(TokenType.TIME, matcher.group(1));
         } else if ((matcher = matchRule("<LOCATION>", "Where is <ROOM>|How do <PRO> get to <ROOM>|Where is <ROOM> located")) != null) {

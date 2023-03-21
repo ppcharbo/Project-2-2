@@ -16,13 +16,13 @@ import project.multi.agent.Token;
  * 
  */
 
-@Rule(name = "No Lecture on saturday", description = "this rules is triggered when is saturday and is type schedule")
-public class RuleScheduleOnSaturday {
+@Rule(name = "Lecture on Monday", description = "this rules is triggered when is Monday ")
+public class RuleScheduleOnMonday {
 
 	@Condition
-	public boolean when(@Fact("DAY") String day, @Fact("SCHEDULE") String schedule) {
+	public boolean when(@Fact("DAY") String day, @Fact("SCHEDULE") String schedule,@Fact("TIME") String time) {
 
-		if (day.equals(" Saturday ") && schedule != null)
+		if (day.equals(" Monday ") && schedule != null &&  time.equals(" 9 "))
 			return true;
 		else
 			return false;
@@ -30,7 +30,7 @@ public class RuleScheduleOnSaturday {
 
 	@Action
 	public void result() {
-		System.err.println("There are no lectures on Saturday ");
+		System.err.println("We start the week with math");
 	}
 
 }
