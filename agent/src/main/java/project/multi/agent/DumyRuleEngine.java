@@ -25,18 +25,13 @@ public class DumyRuleEngine {
 	public DumyRuleEngine(String sentence) {
 		this.sentence = sentence;
 
-		
 	}
 
 	public void run() {
 
-		
-		// add facts 
+		// add facts
 		facts = new Facts();
-	 
-				
-		
-		
+
 		// define rules
 		RuleScheduleOnSaturday rule = new RuleScheduleOnSaturday();
 		rules = new Rules();
@@ -50,14 +45,11 @@ public class DumyRuleEngine {
 
 	private Collection<Facts> buildFacts(String sentence2) {
 		// TODO Auto-generated method stub
-		
+
 		ArrayList<Facts> arrayList = new ArrayList<Facts>();
 		String name;
-		 
+
 		return arrayList;
 	}
-
-	
-	
 
 }
