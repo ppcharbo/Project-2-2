@@ -9,13 +9,53 @@ public final class App {
     App() {
     }
 
+    
+	public String  parse(String sentence) {
+		//  "Which lectures are there on Saturday at 11";  -->>> Array Simbol ...  ["Which","lectures","are"]
+		
+		 
+		 
+		
+		
+		return "There are no lectures on Saturday";
+	}
+
+	private String  [] splitInput(String sentence) {
+		// TODO Auto-generated method stub
+		return   sentence.split(" ");
+
+	}
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
     /**
      * Says hello to the world.
      * @param args The arguments of the program.
      */
     public static void main(String[] args) {
         
-        
+        //  "Which lectures are there on Saturday at 11";
         
         Symbol S = new Symbol("S", Arrays.asList(
                 Arrays.asList(new Symbol("ACTION")),
@@ -84,9 +124,5 @@ public final class App {
         System.out.println(ACTION1.toStringLong());
     }
 
-	public String  parse(String sentence) {
-		
-		
-		return "There are no lectures on Saturday";
-	}
+
 }
