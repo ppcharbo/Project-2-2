@@ -18,7 +18,7 @@ class AppTest {
         
     	//"Which lectures are there on Saturday "; --> I have no idea
     	
-    	String sentence = "Which lectures are there on Saturday at 11";   // --> There are no lectures on Saturday
+    	String sentence = "Which lectures are there on Saturday at 12 ";   // --> There are no lectures on Saturday
     	// step 1 split in array :
     	// [Which, lectures, are, there, on, Saturday, at, 11]
     	// step 2 
@@ -27,6 +27,16 @@ class AppTest {
     	// [Which, lectures, are, there, on, {DAY,Saturday}, at, {TIME,11}]
     	// [Which, lectures, are, there, on, {DAY,Saturday}, at, {TIME,11}]
     	// [Which, lectures, are, there, {TIMEEXPRESSION,{DAY,Saturday}, at, {TIME,11} }]
+    	
+    	
+    	//Which lectures are there on Saturday at 11
+    	//Which lectures are there on DAY at 11
+    	//Which lectures are there on DAY at TIME
+    	//Which lectures are there TIMEXPRESSION
+    	//Which lectures are there TIMEXPRESSION
+    	//<SCHEDULE>
+    	//<ACTION>
+    	//<S
     	
     	
     	 
@@ -40,7 +50,17 @@ class AppTest {
     	
     	nextToken = lexer.getNextToken();
     	System.out.println(nextToken);
+    
+    	nextToken = lexer.getNextToken();
+    	System.out.println(nextToken);
     	
+    	nextToken = lexer.getNextToken();
+    	System.out.println(nextToken);
+    
+    	nextToken = lexer.getNextToken();
+    	System.out.println(nextToken);
+    	  
+    
     	/*
     	String expected="There are no lectures on Saturday";
     	
